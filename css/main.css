@@ -10,8 +10,13 @@ h1 {
   font-weight: bold;
 }
 
+header h1 {
+  font-size: 2rem;
+  margin-top: -1rem;
+}
+
 input {
-  color: #663333;
+  color: #993333;
   font-family: "Open Sans", sans-serif;
   font-weight: 900;
 }
@@ -20,7 +25,7 @@ input {
 header {
   display: flex;
   justify-content: space-between;
-  background-image: url(../img/wyatt-ryan-367017-unsplash.jpg);
+  background-image: url(../img/jamie-street-DZ3ixpNPt7c-unsplash.jpeg);
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -61,11 +66,6 @@ div {
   flex-direction: column;
 }
 
-header h1 {
-  font-size: 3.8rem;
-  margin-top: 0;
-}
-
 .search {
   margin: auto;
   display: inline-block;
@@ -75,10 +75,10 @@ header h1 {
   font-size: 1rem;
   margin-right: 15rem;
   color: white;
-  background-color: #c45515;
+  background-color: #666633;
 }
 
-/* Med. */
+/* Med. ---------------------------------------------------------- */
 @media only Screen and (min-width: 32.5em) {
   form {
     display: grid;
@@ -91,6 +91,14 @@ header h1 {
   }
 
   /* ------------------------  Send to end ----------------*/
+  header {
+    padding: 9rem 1rem 6rem 1rem;
+  }
+
+  img {
+    margin-top: -8rem;
+  }
+
   form .search {
     display: grid;
     justify-content: end;
@@ -99,7 +107,7 @@ header h1 {
   .search-btn {
     font-size: 1rem;
     color: white;
-    background-color: #c45515;
+    background-color: #666633;
   }
   .date {
     padding-right: 2rem;
@@ -111,10 +119,15 @@ header h1 {
     height: 4.5rem;
   }
 
-  h1 {
-    font-size: 4rem;
-    margin-top: -1rem;
+  header h1 {
+    font-size: 3rem;
+    margin-top: -9rem;
   }
+
+  /* h1 {
+    font-size: 4rem;
+    margin-top: 1rem;
+  } */
 }
 
 /* large */
@@ -155,6 +168,6 @@ header h1 {
     font-size: 1rem;
     margin-right: 15rem;
     color: white;
-    background-color: #c45515;
+    background-color: #666633;
   }
 }
