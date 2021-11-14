@@ -1,0 +1,19 @@
+In your version you may customize the colour(s), typography and header image. The layout must remain
+ as shown above with a small, medium and large layout (breakpoints may be approximate to the gif). The Logo image is provided.
+
+Pick an image from Unsplash Dog Search Results (opens new window). In your CSS add a comment about the source of your image. Then use a Chrome extension 
+like ColorZilla or Photoshop to extract a two or three colours from your image. Use those colours as the background colour for your button plus the colours 
+for the label and input text. Make sure that the button text and the button background have accessible contrast.
+
+Make sure that all inputs, labels, and heading text use the same font.
+
+Be consistent with your font sizes. Think about the typographic hierarchy.
+
+Remember to put a text shadow on any text that is on top of a background image. Use two colours with high contrast. One for the text and one for the shadow.
+
+Add a Google font with the @import syntax at the top of the CSS file.
+
+You can use CSS Grid or Flexbox for your layout. Float should NOT be used.
+
+You need to make the form responsive. There should be 3 different layouts, just like in the example image above.
+

@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu:wght@300;700&display=swap");
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+input {
+  color: #663333;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+}
+
+/* Back Ground */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../img/wyatt-ryan-367017-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 1rem 1rem 6rem 1rem;
+}
+
+main {
+  border: 1px solid grey;
+}
+
+.price::after {
+  content: "$" attr(data-price);
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.min-price,
+.max-price {
+  position: relative;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+header img {
+  width: 13%;
+  max-width: 4rem;
+  height: 2.5rem;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  font-size: 3.8rem;
+  margin-top: 0;
+}
+
+.search {
+  margin: auto;
+  display: inline-block;
+}
+
+.search-btn {
+  font-size: 1rem;
+  margin-right: 15rem;
+  color: white;
+  background-color: #c45515;
+}
+
+/* Med. */
+@media only Screen and (min-width: 32.5em) {
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .place {
+    grid-column: span 2;
+  }
+
+  /* ------------------------  Send to end ----------------*/
+  form .search {
+    display: grid;
+    justify-content: end;
+    /* justify-items: end; */
+  }
+  .search-btn {
+    font-size: 1rem;
+    color: white;
+    background-color: #c45515;
+  }
+  .date {
+    padding-right: 2rem;
+  }
+
+  header img {
+    width: 13%;
+    max-width: 5rem;
+    height: 4.5rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-top: -1rem;
+  }
+}
+
+/* large */
+@media only screen and (min-width: 50em) {
+  main {
+    display: flex;
+    margin: auto;
+    max-width: 50rem;
+  }
+
+  header {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  /* img {
+    padding-right: 3rem;
+  } */
+
+  header img {
+    width: 15%;
+    max-width: 2rem;
+    height: 1.8rem;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  header h1 {
+    margin-top: -16px;
+    margin-left: 1rem;
+    font-size: 2.8rem;
+    margin-right: 0;
+  }
+
+  .search-btn {
+    font-size: 1rem;
+    margin-right: 15rem;
+    color: white;
+    background-color: #c45515;
+  }
+}
